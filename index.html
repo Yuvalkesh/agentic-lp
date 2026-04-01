@@ -85,12 +85,12 @@
         .stitle { font-size: clamp(28px, 4.5vw, 38px); font-weight: 700; text-align: center; margin-bottom: 12px; letter-spacing: -0.6px; }
         .ssub { text-align: center; color: var(--text-secondary); font-size: 17px; margin-bottom: 48px; max-width: 520px; margin-left: auto; margin-right: auto; }
 
+        /* ===== HERO IMAGE ===== */
+        .hero-visual { max-width: 640px; margin: 0 auto; }
+        .hero-img { width: 100%; border-radius: 24px; box-shadow: 0 24px 64px rgba(0,0,0,0.12), 0 8px 24px rgba(0,0,0,0.06); display: block; transition: transform 0.5s cubic-bezier(0.22,1,0.36,1); }
+        .hero-img:hover { transform: scale(1.01) translateY(-4px); }
+
         /* ===== PHONE MOCKUP ===== */
-        .hero-split { display: grid; grid-template-columns: 1fr 380px; gap: 48px; align-items: center; max-width: 900px; margin: 48px auto 0; }
-        @media(max-width:768px) { .hero-split { grid-template-columns: 1fr; } }
-        .hero-text-side { text-align: right; }
-        .hero-text-side h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; }
-        .hero-text-side p { font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
         .phone { border-radius: 28px; overflow: hidden; background: #fff; box-shadow: 0 24px 64px rgba(0,0,0,0.1), 0 8px 24px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.06); }
         .phone-notch { height: 24px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; }
         .phone-notch span { width: 60px; height: 4px; background: #ddd; border-radius: 4px; }
@@ -216,20 +216,27 @@
         </div>
     </div>
     <div class="container" style="margin-top: 48px;">
-        <div class="hero-split">
-            <div class="hero-text-side">
-                <h2>ככה זה נראה כל בוקר ב7:00</h2>
-                <p>הסוכן שלך כבר סרק את המיילים, בדק את היומן, זיהה משימות שנפלו ולקוחות שלא חזרת אליהם. הכל מוכן בוואטסאפ לפני שקמת מהמיטה.</p>
-                <p style="margin-top:12px; font-size:14px; color:var(--orange); font-weight:600;">לא עושה כלום בלי אישור. אתה בשליטה מלאה.</p>
-            </div>
+        <div class="hero-visual">
+            <img src="hero.png" alt="Agentic" class="hero-img" />
+        </div>
+    </div>
+</section>
+
+<!-- WA DEMO -->
+<section class="section reveal">
+    <div class="container">
+        <h2 class="stitle">ככה זה נראה כל בוקר ב7:00</h2>
+        <p class="ssub">הסוכן שלך כבר סרק את המיילים, בדק את היומן, זיהה כשלים. הכל מוכן בוואטסאפ לפני שקמת.</p>
+        <div style="max-width:380px; margin:0 auto;">
             <div class="phone">
                 <div class="phone-notch"><span></span></div>
-                <div class="wa-hdr"><div class="wa-av">S</div><div><div class="wa-nm">הסוכן שלך</div><div class="wa-st">מקליד...</div></div></div>
+                <div class="wa-hdr"><div class="wa-av">A</div><div><div class="wa-nm">Agentic</div><div class="wa-st">מקליד...</div></div></div>
                 <div class="wa-bd" id="wa-chat">
                     <div class="typing-dots" id="typing"><span></span><span></span><span></span></div>
                 </div>
             </div>
         </div>
+        <p style="text-align:center; margin-top:16px; font-size:14px; color:var(--orange); font-weight:600;">לא עושה כלום בלי אישור שלך. אתה בשליטה מלאה.</p>
     </div>
 </section>
 
